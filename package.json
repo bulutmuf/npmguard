@@ -1,0 +1,30 @@
+{
+  "name": "npmguard",
+  "version": "1.0.0",
+  "description": "License & security guard for npm install",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bulutmuf/npmguard.git"
+  },
+  "keywords": [
+    "npm",
+    "security",
+    "license",
+    "guard",
+    "audit",
+    "license-checker",
+    "dev-tool",
+    "cli",
+    "pre-install"
+  ],
+  "author": "bulutmuf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bulutmuf/npmguard/issues"
+  },
+  "homepage": "https://github.com/bulutmuf/npmguard#readme"
+}
