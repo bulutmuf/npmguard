@@ -8,7 +8,7 @@ const cVersion = packageJson.version
 async function getVersion() {
     try {
         const res = await fetch(`https://registry.npmjs.org/${packageJson.name}/latest`);
-        //if (!res.ok) return logger.error("Failed to fetch from npm registry.");
+        if (!res.ok) return logger.error("Failed to fetch from npm registry.");
 
         const current = chalk.bold.cyan("npmsecure: ") + chalk.gray(`${cVersion}`);
         const rVersion = await res.json().version;
