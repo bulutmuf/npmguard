@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const help = require("../commands/help")
+const version = require("../commands/version")
 const pkg = require("../package.json");
 
 
@@ -38,7 +39,7 @@ if (!command || helpAliases.has(command)) return help();
 
 switch (true) {
     case versionAliases.has(command):
-        
+        version();
         break;
 
     default:

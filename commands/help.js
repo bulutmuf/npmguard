@@ -1,6 +1,8 @@
 const chalk = require("chalk");
+const { getVersion } = require("../utils/version")
 
-function help() {
+async function help() {
+  const version = await getVersion()
   process.stdout.write("\x1Bc");
 
   console.log(
@@ -19,6 +21,7 @@ function help() {
   console.log("  version     Show current version");
   console.log("");
 
+  console.log(version)
 
 }
 

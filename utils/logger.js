@@ -1,18 +1,8 @@
 const chalk = require("chalk");
 
 module.exports = {
-  info: (msg) =>
-    console.log(chalk.cyan("[INFO]"), msg),
-
-  success: (msg) =>
-    console.log(chalk.green("[SUCCESS]"), msg),
-
-  warn: (msg) =>
-    console.log(chalk.yellow("[WARN]"), msg),
-
-  error: (msg) =>
-    console.log(chalk.red("[ERROR]"), msg),
-
-  critical: (msg) =>
-    console.log(chalk.bgRed.white.bold("[CRITICAL]"), msg),
+  success: (msg) => `${chalk.green("[SUCCESS]")} ${chalk.whiteBright(msg)}`,
+  warn: (msg) => `${chalk.yellow("[WARN]")} ${chalk.whiteBright(msg)}`,
+  error: (msg) => `${chalk.red("[ERROR]")} ${chalk.whiteBright(msg)}`,
+  critical: (msg) => `${chalk.bgRed.white.bold("[CRITICAL]")} ${chalk.whiteBright(msg)}`,
 };
