@@ -1,5 +1,5 @@
 {
-  "name": "npmguard",
+  "name": "npmsecure",
   "version": "1.0.0",
   "description": "License & security guard for npm install",
   "main": "index.js",
@@ -8,10 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bulutmuf/npmguard.git"
+    "url": "git+https://github.com/bulutmuf/npmsecure.git"
   },
   "bin": {
-    "npmguard": "./bin/cli.js"
+    "npmsecure": "./bin/cli.js"
   },
   "keywords": [
     "npm",
@@ -27,9 +27,9 @@
   "author": "bulutmuf",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bulutmuf/npmguard/issues"
+    "url": "https://github.com/bulutmuf/npmsecure/issues"
   },
-  "homepage": "https://github.com/bulutmuf/npmguard#readme",
+  "homepage": "https://github.com/bulutmuf/npmsecure#readme",
   "dependencies": {
     "chalk": "^4.1.2"
   }
