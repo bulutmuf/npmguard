@@ -9,12 +9,17 @@ function help() {
   );
   console.log("");
 
-  console.log(chalk.bold("Usage:"));
+  console.log(chalk.cyanBright.bold("Usage:"));
   console.log("  npmguard <command> [options]");
   console.log("");
 
-  console.log(chalk.bold("Commands:"));
+  console.log(chalk.cyanBright.bold("Commands:"));
   console.log("  help        Show this help");
+  console.log("");
+
+  console.log(
+    chalk.gray("by ") + chalk.cyan("@bulutmuf")
+  );
 }
 
 module.exports = help;
